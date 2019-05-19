@@ -219,8 +219,8 @@ public class DomeinController {
     public String afrondenSpel() {
         return spel.afrondenSpel();
     }
-    
-    public String[] getLanguage(){
+
+    public String[] getLanguage() {
         String[] lang = {"English", "Nederlands", "Français"};
         return lang;
     }
@@ -241,6 +241,14 @@ public class DomeinController {
                 break;
 
         }
+    }
+
+    public void kiesAantal(int keuze) {
+        aantalInstellen(keuze + 1);
+    }
+
+    public int getAantal() {
+        return spel.getAantal();
     }
 
 }
