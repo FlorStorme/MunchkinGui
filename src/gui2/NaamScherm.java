@@ -27,7 +27,7 @@ public class NaamScherm extends Pane {
     private void voegComponentenToe() {
      int aantal= controller.getAantal();
      for(int i=0; i<aantal;i++ ){
-         
+         // aantal vakken om de namen in te vullen 
      }
     }
 
