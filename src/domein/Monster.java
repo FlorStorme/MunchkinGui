@@ -1,6 +1,6 @@
 package domein;
 
-import static cui.UC1_MaakSpel.labels;
+import static domein.DomeinController.labels;
 
 public class Monster extends KerkerKaart {
 

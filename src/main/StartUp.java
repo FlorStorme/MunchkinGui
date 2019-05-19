@@ -1,7 +1,7 @@
 package main;
 
 import domein.DomeinController;
-import gui2.HoofdPaneel;
+import gui.HoofdPaneel;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;

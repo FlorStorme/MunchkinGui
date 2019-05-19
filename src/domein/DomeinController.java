@@ -242,11 +242,7 @@ public class DomeinController {
 
         }
     }
-
-    public void kiesAantal(int keuze) {
-        aantalInstellen(keuze + 1);
-    }
-
+    
     public int getAantal() {
         return spel.getAantal();
     }

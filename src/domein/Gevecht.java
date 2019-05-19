@@ -1,6 +1,6 @@
 package domein;
 
-import static cui.UC1_MaakSpel.labels;
+import static domein.DomeinController.labels;
 import java.util.ArrayList;
 import java.util.List;
 

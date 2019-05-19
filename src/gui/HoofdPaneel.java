@@ -1,4 +1,4 @@
-package gui2;
+package gui;
 
 import domein.DomeinController;
 import javafx.scene.layout.BorderPane;
@@ -12,6 +12,7 @@ public class HoofdPaneel extends BorderPane {
 
     public HoofdPaneel(DomeinController controller) {
         this.controller = controller;
+        controller.registreer();
         this.taalScherm = new TaalScherm(controller, this);
         this.regScherm = new RegistratieScherm(controller, this);
         this.naamScherm = new NaamScherm(controller, this);
@@ -27,8 +28,12 @@ public class HoofdPaneel extends BorderPane {
         setCenter(regScherm);
     }
 
-    void aantalGekozen() {
+    public void aantalGekozen() {
        setCenter(naamScherm);
+    }
+
+    public void namenIngegeven() {
+        
     }
 
 }
