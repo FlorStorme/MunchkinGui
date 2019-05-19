@@ -16,7 +16,7 @@ public class StartUp extends Application {
     public void start(Stage stage) {
         DomeinController controller = new DomeinController();
         UC1_MaakSpelController uc1 = new UC1_MaakSpelController(controller);
-        Scene scene = new Scene(uc1, 500, 300);
+        Scene scene = new Scene(uc1, 600, 400);
         stage.setScene(scene);
         stage.setTitle("Munchkin");
         stage.show();
