@@ -41,7 +41,7 @@ public class UC1_MaakSpelController extends Pane {
             throw new RuntimeException(ex);
         }
         cmbLanguage.setItems(FXCollections.observableArrayList(dc.getLanguage()));
-
+        
     }
 
     @FXML
@@ -50,6 +50,11 @@ public class UC1_MaakSpelController extends Pane {
         dc.kiesTaal(keuze);
         lblChosenLang.setText(labels.getString("toon_gekozen_taal"));
         btnDoorgaan.setText(labels.getString("doorgaan"));
+    }
+    
+    @FXML
+    private void btnDoorgaanOnAction (ActionEvent event) {
+        
     }
 
 }
