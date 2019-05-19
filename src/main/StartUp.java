@@ -1,7 +1,7 @@
 package main;
 
 import domein.DomeinController;
-import gui.UC1_MaakSpelController;
+import gui2.HoofdPaneel;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -13,20 +13,18 @@ import javafx.stage.Stage;
 public class StartUp extends Application {
     
     @Override
-    public void start(Stage stage) {
+    public void start(Stage stage)
+    {
         DomeinController controller = new DomeinController();
-        UC1_MaakSpelController uc1 = new UC1_MaakSpelController(controller);
-        Scene scene = new Scene(uc1, 600, 400);
-        stage.setScene(scene);
+        Scene scene = new Scene(new HoofdPaneel(controller), 600, 400);
         stage.setTitle("Munchkin");
+        stage.setScene(scene);
         stage.show();
     }
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        launch(args);
+    public static void main(String... args)
+    {
+        Application.launch(StartUp.class, args);
     }
     
 }
