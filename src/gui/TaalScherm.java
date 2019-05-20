@@ -52,7 +52,7 @@ public class TaalScherm extends Pane {
         doorgaan.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                hoofdPaneel.taalGekozen();
+                hoofdPaneel.taalGekozen(controller);
             }
         });
         this.getChildren().addAll(lang, chosenLang, doorgaan);

@@ -25,8 +25,7 @@ public class RegistratieScherm extends Pane {
 
         voegComponentenToe();
     }
-
-    private final Label label = new Label();
+    
     private final ComboBox aantal = new ComboBox();
     private final Button doorgaan = new Button();
 
