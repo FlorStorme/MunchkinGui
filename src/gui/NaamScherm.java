@@ -93,8 +93,9 @@ public class NaamScherm extends Pane {
                     txtInput2.setLayoutX(420);
                     txtInput2.setLayoutY(80);
                     speler1.setText(labels.getString("voeg_speler_toe"));
-                    speler1.setLayoutX(500);
+                    speler1.setLayoutX(600);
                     speler1.setLayoutY(80);
+                    this.getChildren().add(speler1);
                     speler1.setOnAction(new EventHandler<ActionEvent>() {
                         @Override
                         public void handle(ActionEvent event) {
